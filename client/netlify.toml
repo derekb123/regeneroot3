@@ -12,5 +12,5 @@
   command = "npm run build"
 
 [build.environment]
-  REACT_APP_API_BASE_URL = "https://regeneroot.herokuapp.com/"
-  REACT_APP_WEBSOCKET_URL = "wss://regeneroot.herokuapp.com/"
+  REACT_APP_API_BASE_URL = "https://regeneroot3.herokuapp.com/"
+  REACT_APP_WEBSOCKET_URL = "wss://regeneroot3.herokuapp.com/"
