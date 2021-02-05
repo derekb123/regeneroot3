@@ -19,6 +19,8 @@ const Home = (props) => {
 
   const { state, setState } = props;
 
+  console.log(state)
+
   useEffect(() => {
 
 
