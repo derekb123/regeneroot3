@@ -16,7 +16,7 @@ const Home = (props) => {
 
   const inputRef = useRef("");
 
-  
+  const { state, setState } = props;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,8 +37,6 @@ const Home = (props) => {
         setIsLoading(true);
         query += `maximum_size=${enteredMaxSize}&`;
       }
-
-      const { state, setState } = props;
 
       axios.get("/api/lots/search" + query).then((response) => {
         setIsLoading(false);
