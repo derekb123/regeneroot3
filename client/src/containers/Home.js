@@ -21,12 +21,7 @@ const Home = (props) => {
 
   useEffect(() => {
 
-      if (state.lots.length < 1) {
-    //can return loading icon istead
-      setIsLoading(true);
-    } else {
-      setIsLoading(false);
-    }
+
 
     const timer = setTimeout(() => {
       let query = "?";
