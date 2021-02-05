@@ -7,6 +7,7 @@ import { SearchInput, Text, TextInput, Spinner, Pane } from "evergreen-ui";
 import "./Home.css";
 
 const Home = (props) => {
+
   const [enteredCity, setEnteredCity] = useState("");
   const [enteredCountry, setEnteredCountry] = useState("");
   const [enteredMinSize, setEnteredMinSize] = useState("");
@@ -130,7 +131,7 @@ const Home = (props) => {
       </Pane>
 
       <Pane paddingTop={500} display="flex" flexDirection="row" flexWrap="wrap">
-        {state.lots.map((lot) => {
+        {props.state.lots.map((lot) => {
           return (
             <LotTile
               key={lot.id}
