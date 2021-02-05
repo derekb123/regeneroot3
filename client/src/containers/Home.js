@@ -5,6 +5,7 @@ import LotTile from "../components/Lot/LotTile";
 import { SearchInput, Text, TextInput, Spinner, Pane } from "evergreen-ui";
 // import { Redirect } from "react-router-dom";
 import "./Home.css";
+// import { load } from "dotenv/types";
 
 const Home = (props) => {
   
@@ -19,6 +20,14 @@ const Home = (props) => {
   const { state, setState } = props;
 
   useEffect(() => {
+
+      if (!state.lots.length) {
+    //can return loading icon istead
+      setIsLoading(true);
+    } else {
+      setIsLoading(false);
+    }
+
     const timer = setTimeout(() => {
       let query = "?";
       if (enteredCity.length > 0) {
@@ -45,18 +54,39 @@ const Home = (props) => {
           lots: response.data,
         }));
       });
-    }, 1000);
+    }, 3000);
     // clean up timer before next run
     return () => {
       clearTimeout(timer);
     };
   }, [enteredCity, enteredCountry, enteredMinSize, enteredMaxSize, inputRef]);
 
-  if (!state.lots.length) {
-    //can return loading icon istead
-    return null;
-  }
+  // if (!state.lots.length) {
+  //   //can return loading icon istead
+  //   setIsLoading(true);
+  // } else {
+  //   setIsLoading(false);
+  // }
 
+  // if (!state.lots.length) {
+  //   return null;
+  // }
+
+  // do { setIsLoading(true) }
+  //   while (!state.lots.length);
+
+  // const loadState = (props) =>{
+
+  // }
+  //   useEffect(() => {
+  //     async function stateLoader() {
+        
+  //     }
+  //     loadState();
+  //   }, []);
+
+  
+  
   return (
     <Pane
       className="home--layout"
