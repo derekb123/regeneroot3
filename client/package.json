@@ -26,7 +26,7 @@
     "react-scripts": "3.4.3",
     "react-spinners": "^0.9.0"
   },
-  "proxy": "http://localhost:8080",
+  "proxy": "http://regeneroot3.netlify.app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
