@@ -15,6 +15,11 @@ const app = express();
 const morgan = require("morgan");
 const cookieSession = require("cookie-session");
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.use(
   cookieSession({
     name: "session",
