@@ -52,6 +52,11 @@ const Home = (props) => {
     };
   }, [enteredCity, enteredCountry, enteredMinSize, enteredMaxSize, inputRef]);
 
+  if (!state.lots.length) {
+    //can return loading icon istead
+    return null;
+  }
+
   return (
     <Pane
       className="home--layout"
