@@ -15,6 +15,12 @@ import CreateLot from "./containers/CreateLot";
 import Login from "./containers/Login";
 import { css } from "@emotion/core";
 import BeatLoader from "react-spinners/BeatLoader";
+import axios from 'axios';
+
+if (process.env.REACT_APP_API_BASE_URL) {
+  axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
+}
+
 
 const App = () => {
   const override = css`
