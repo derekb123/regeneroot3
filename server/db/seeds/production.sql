@@ -1,3 +1,62 @@
+-- Users table seeds here (Example)
+insert into users (first_name, last_name, username, email, password, avatar, created_at) values ('Lorrayne', 'Eyrl', 'plantsforever', 'leyrl0@tamu.edu', 'QReTsXhy', 'https://i.imgur.com/4BgM7yj.png', '2020-01-05');
+insert into users (first_name, last_name, username, email, password, avatar, created_at) values ('Ameline', 'Hinkensen', 'strawberry1', 'ahinkensen1@nytimes.com', 'n5jowSJIvb', 'https://i.imgur.com/4RjMRvu.png', '2019-05-09');
+insert into users (first_name, last_name, username, email, password, avatar, created_at) values ('Scott', 'Hovenden', 'iLoveEarth', 'ihovenden2@cafepress.com', 'XSY8bIhnom', 'https://i.imgur.com/w7t0lIV.png', '2019-06-20');
+insert into users (first_name, last_name, username, email, password, avatar, created_at) values ('John', 'Beven', 'etolle', 'ddee3@gmpg.org', '8nd1yLEJK', 'https://i.imgur.com/Wxc32Is.png', '2018-02-05');
+insert into users (first_name, last_name, username, email, password, avatar, created_at) values ('Ashley', 'Yan', 'spadeCapades', 'ayan@123.com', '12345', 'https://i.imgur.com/XU0gJtm.png', '2019-04-10');
+insert into users (first_name, last_name, username, email, password, avatar, created_at) values ('Enya', 'Liang', 'growPro', 'enyal@gmpg.org', '12345', 'https://i.imgur.com/HZk6nPR.png', '2018-04-15');
+
+insert into lots (owner_id, title, size, cost_per_month, is_irrigated, suggested_term, condition_rating, available_date, lot_type, lot_description, is_leased, street_address, city, country, post_code, lat, long, created_at, is_active) values (1, 'For a Serious Farmer', 2000, 17, true, 15, 4, '6/5/2020', 'residential', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', true, '2100 208 Street', 'langley', 'canada', 'V2Z2A6', 49.042960, -122.638460, '2020-03-06', true);
+
+insert into lots (owner_id, title, size, cost_per_month, is_irrigated, suggested_term, condition_rating, available_date, lot_type,lot_description, is_leased, street_address, city, country, post_code, lat, long, created_at, is_active) values (4, 'Eastlawn', 1870, 49, true, 6, 5, '8/18/2020', 'residential', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', false, '21479 Smith Crescent', 'langley', 'canada', 'V2Y2R4', 49.133890, -122.627330, '2019-10-15', true);
+
+insert into lots (owner_id, title, size, cost_per_month, is_irrigated, suggested_term, condition_rating, available_date, lot_type, lot_description, is_leased, street_address, city, country, post_code, lat, long, created_at, is_active) values (1, 'Central and Quiet', 500, 39, true, 20, 4, '6/5/2020', 'residential', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', true, '12040 149 St NW', 'edmonton', 'canada', 'T5V1P2', 53.572510, -113.578480, '2020-05-30', true);
+
+insert into lots (owner_id, title, size, cost_per_month, is_irrigated, suggested_term, condition_rating, available_date, lot_type, lot_description, is_leased, street_address, city, country, post_code, lat, long, created_at, is_active) values (3, 'Previously Organic', 1000, 57, true, 1, 4, '8/13/2020', 'residential', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', true, '11312 79 St NW', 'edmonton', 'canada', 'T5B2K2', 53.563140, -113.462770, '2019-12-08', true);
+
+insert into lots (owner_id, title, size, cost_per_month, is_irrigated, suggested_term, condition_rating, available_date, lot_type, lot_description, is_leased, street_address, city, country, post_code, lat, long, created_at, is_active) values (4, 'Front and Backyard', 458, 33, true, 18, 4, '8/10/2020', 'residential', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', true, '1903 Parsons Rd NW', 'edmonton', 'canada', 'T6N1H5', 53.447780, -113.479880, '2020-07-10', true);
+
+insert into lots (owner_id, title, size, cost_per_month, is_irrigated, suggested_term, condition_rating, available_date, lot_type, lot_description, is_leased, street_address, city, country, post_code, lat, long, created_at, is_active) values (3, 'Space to be Creative!', 5000, 10, true, 6, 5, '8/20/2020', 'commercial', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', true, '5910 216 St', 'langley', 'canada', 'V2Y2N5', 49.109517, -122.6260083, '01/03/2020', true);
+
+-- insert into lots (owner_id, title, size, cost_per_month, is_irrigated, suggested_term, condition_rating, available_date, lot_type, lot_description, is_leased, street_address, city, country, post_code, lat, long, created_at, is_active) values (5, 'Gardeners welcome!', 1200, 10, true, 6, 5, '8/20/2020', 'commercial', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', true, '519 St Clarens Ave', 'toronto', 'canada', 'M6H3W4', 43.660706, -79.442342, '01/03/2018', true);
+
+-- insert into lots (owner_id, title, size, cost_per_month, is_irrigated, suggested_term, condition_rating, available_date, lot_type, lot_description, is_leased, street_address, city, country, post_code, lat, long, created_at, is_active) values (6, 'Available Immediately', 5000, 10, true, 6, 5, '8/20/2020', 'residential', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', true, '1201-1299 Alamo St', 'austin', 'united states', '78702', 30.274600, -97.718010, '01/03/2019', true);
+
+-- Widgets table seeds here (Example)
+insert into images (lot_id, image_url, created_at) values (1, 'https://mindbodygreen-res.cloudinary.com/images/w_1040,q_auto,f_auto,fl_lossy/ftr/farminline/meet-the-family-growing-6000-pounds-of-food-a-year-in-their-la-backyard.jpg', '2018-03-06');
+insert into images (lot_id, image_url, created_at) values (1, 'https://mindbodygreen-res.cloudinary.com/images/dpr_2.0,w_1040,q_auto,f_auto,fl_lossy/ftr/farminline2/meet-the-family-growing-6000-pounds-of-food-a-year-in-their-la-backyard.jpg', '2018-03-06');
+insert into images (lot_id, image_url, created_at) values (1, 'https://images.unsplash.com/photo-1553524808-eef8eb03cf29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80', '2020-03-06');
+insert into images (lot_id, image_url, created_at) values (2, 'https://canoladigest.ca/wp-content/uploads/2019/02/42-incorporate-farm-feature-min.jpg', '2018-05-30');
+insert into images (lot_id, image_url, created_at) values (2, 'https://www.porkbusiness.com/sites/default/files/styles/featured_banner/public/Farm-redbarn_1.jpg?itok=fkIoj_b5', '2018-05-30');
+insert into images (lot_id, image_url, created_at) values (2, 'https://api.time.com/wp-content/uploads/2018/04/farm-museum-viral-memes.jpg', '2018-05-30');
+insert into images (lot_id, image_url, created_at) values (3, 'https://i.imgur.com/tvzECw3.jpeg', '2019-10-15');
+insert into images (lot_id, image_url, created_at) values (3, 'https://i.imgur.com/aF6xc5H.jpg', '2019-10-15');
+insert into images (lot_id, image_url, created_at) values (3, 'https://www.elyons.com/wp-content/uploads/2017/04/SQUARE-FOOT-GARDEN.jpg', '2020-10-15');
+insert into images (lot_id, image_url, created_at) values (3, 'https://i.ytimg.com/vi/Bc4ecvD_rMM/maxresdefault.jpg', '2019-10-15');
+insert into images (lot_id, image_url, created_at) values (4, 'https://i.imgur.com/hC5RT2z.jpg', '2019-12-08');
+insert into images (lot_id, image_url, created_at) values (4, 'https://i.imgur.com/OkZLghB.jpeg', '2019-12-08');
+insert into images (lot_id, image_url, created_at) values (4, 'https://i.imgur.com/onG24K5.jpg', '2019-12-08');
+insert into images (lot_id, image_url, created_at) values (4, 'https://i.imgur.com/kZdOv6E.jpg', '2019-12-08');
+insert into images (lot_id, image_url, created_at) values (4, 'https://i.imgur.com/24wV0jA.jpg', '2019-12-08');
+insert into images (lot_id, image_url, created_at) values (5, 'https://i.imgur.com/YPA6NxU.jpg', '2018-09-10');
+insert into images (lot_id, image_url, created_at) values (5, 'https://i.imgur.com/Bdq1ZdX.jpeg', '2020-07-10');
+insert into images (lot_id, image_url, created_at) values (5, 'https://i.imgur.com/48YC1sP.jpg', '2020-07-10');
+insert into images (lot_id, image_url, created_at) values (5, 'https://i.imgur.com/VF4qeEX.jpg', '2018-07-10');
+insert into images (lot_id, image_url, created_at) values (6, 'https://upload.wikimedia.org/wikipedia/commons/3/3d/New_crops-Chicago_urban_farm.jpg', '2018-07-10');
+insert into images (lot_id, image_url, created_at) values (6, 'https://static.producer.com/wp-content/uploads/2019/11/21130707/41_2-col_IMG_0241-707.jpg', '2018-06-08');
+insert into images (lot_id, image_url, created_at) values (6, 'https://mrp-listings.myrealpage.com/5/3/0/91137035/65b62611c6737487f13b1b4c6386e15b.jpeg', '2018-06-08');
+insert into images (lot_id, image_url, created_at) values (6, 'https://i.imgur.com/AQIQO8b.png', '2018-06-08');
+-- insert into images (lot_id, image_url, created_at) values (7, 'https://i.imgur.com/YPA6NxU.jpg', '2018-09-10');
+-- insert into images (lot_id, image_url, created_at) values (7, 'https://i.imgur.com/VF4qeEX.jpg', '2018-07-10');
+-- insert into images (lot_id, image_url, created_at) values (7, 'https://i.imgur.com/48YC1sP.jpg', '2020-07-10');
+
+insert into leases (lot_id, owner_id , renter_id, created_at , term_length, total_cost) values (1, 1, 5, '8/22/2020', 1, 200);
+insert into leases (lot_id, owner_id , renter_id, created_at , term_length, total_cost) values (2, 2, 5,'5/27/2020', 2, 193);
+insert into leases (lot_id, owner_id , renter_id, created_at , term_length, total_cost) values (3, 1, 6, '5/18/2020', 3, 167);
+insert into leases (lot_id, owner_id , renter_id, created_at , term_length, total_cost) values (4, 3, 6, '8/17/2020', 4, 448);
+insert into leases (lot_id, owner_id , renter_id, created_at , term_length, total_cost) values (5, 4, 5, '9/1/2020', 5, 683);
+insert into leases (lot_id, owner_id , renter_id, created_at , term_length, total_cost) values (6, 3, 6, '11/29/2019', 6, 486);
+
 insert into messages (owner_id, renter_id, lot_id, text_body, written_by, created_at) values (3, 4, 6, 'id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis', 3, '2020-02-29 03:24:16');
 insert into messages (owner_id, renter_id, lot_id, text_body, written_by, created_at) values (3, 5, 4, 'dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat', 5, '2020-09-27 11:42:30');
 insert into messages (owner_id, renter_id, lot_id, text_body, written_by, created_at) values (2, 1, 2, 'lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus', 2, '2019-12-19 01:21:37');
